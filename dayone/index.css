@@ -1,19 +1,18 @@
 body
 {
-  background-color:#28272B;
 }
 #title{
   position:absolute;
-  left:calc( 50% - 375px );
+  left:0%;
   bottom:calc( 40% + 100px );
-  width:750px;
+  width:1000px;
   height:200px;
 
 }
 #ocean{
   position:absolute;
-  left:calc( 50% - 375px );
+  left:0%;
   bottom:0%;
-  width:750px;
-  height:100px;
+  width:100%;
+  height:300px;
 }

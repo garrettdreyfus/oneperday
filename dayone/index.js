@@ -1,22 +1,22 @@
 document.addEventListener('DOMContentLoaded', function() {
   var canvas = Snap('#ocean');
-  canvas.rect(0,0,750,100).attr({fill:"#400CE8"})
-  for(var i=0; i<13;i++){
+  canvas.rect(0,0,4000,300).attr({fill:"#400CE8"})
+  for(var i=0; i<30;i++){
     //WAVES
-    canvas.circle((i*60)+10, 0, 50).attr({
-      fill: "#28272B",
+    canvas.circle((i*100)+10, 0, 80).attr({
+      fill: "#fff",
       strokeWidth: 0
     });
   }
-  var cutoff = canvas.rect(245, 30, 80, 40).attr({fill:"#fff"});
-  var mast = canvas.rect(285, 10, 1, 20).attr({fill:"#fff"});
-  var sail = canvas.rect(275, 10, 10, 10).attr({fill:"#fff"});
-  canvas.circle(285,20,10).attr({
+  var cutoff = canvas.rect(235, 50, 100, 100).attr({fill:"#fff"});
+  var mast = canvas.rect(285, 0, 3, 50).attr({fill:"#603311"});
+  var sail = canvas.rect(260, 0, 25, 25).attr({fill:"#fff"});
+  canvas.circle(285,25,25).attr({
       fill: "#E89E0C",
       strokeWidth: 0,
       mask:sail
   });
-  canvas.circle(285,30,20).attr({
+  canvas.circle(285,50,50).attr({
     fill: "#E89E0C",
     strokeWidth: 0,
     mask:cutoff
