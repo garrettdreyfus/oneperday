@@ -1,0 +1,20 @@
+body
+{
+  background-color:#28272B;
+}
+#title{
+  position:absolute;
+  left:calc( 50% - 375px );
+  bottom:calc( 40% + 100px );
+  width:750px;
+  height:200px;
+
+}
+#ocean{
+  position:absolute;
+  left:calc( 50% - 375px );
+  bottom:0%;
+  width:750px;
+  height:100px;
+  background-color:#400CE8
+}
