@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
   var canvas = Snap('#ocean');
-
+  canvas.rect(0,0,750,100).attr({fill:"#400CE8"})
   for(var i=0; i<13;i++){
     //WAVES
     canvas.circle((i*60)+10, 0, 50).attr({
