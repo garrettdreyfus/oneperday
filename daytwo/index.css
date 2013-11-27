@@ -1,0 +1,91 @@
+.drop{
+  position: absolute;
+  left: calc( 50% - 100px );
+  top: calc( 50% - 100px );
+  width: 200px;
+  height:200px;
+  background: #79dbfc;  
+  border-radius: 0px calc(200px/2) calc(200px/2) calc(200px/2);
+  -webkit-transform:rotate(45deg); /* Safari and Chrome */
+  -webkit-animation:drop 1.25s, fadeout 1.25s 1.25s; /* Safari and Chrome */
+  -webkit-animation-fill-mode: forwards;
+}
+.txt{
+  position:absolute;
+  opacity:0;
+  top:10%;
+  left:10%;
+  font-size:72px;
+  font-family: Helvetica;
+  z-index:10;
+  -webkit-animation:fadein 2s 7.5s; /* Safari and Chrome */
+  -webkit-animation-fill-mode: forwards;
+  
+}
+.flower{
+  background: radial-gradient(center 20px, circle, #616161 0%, #616161 20%, #282828 100%);  
+  position: absolute;
+  width: 100px;
+  height:100px;
+  opacity:0;
+  background:#C74375;
+  border-radius: 25px 25px 25px 25px;
+  -webkit-animation:fadein 5s 7.5s; /* Safari and Chrome */
+  -webkit-animation-fill-mode: forwards;
+}
+.center{
+  position: absolute;
+  background:#A69017;
+  left: calc( 50% - 25px );
+  top: calc( 50% - 25px );
+  opacity:0;
+  -webkit-animation:fadein 1s 7.5s; /* Safari and Chrome */
+  -webkit-animation-fill-mode: forwards;
+  border-radius: calc(50px/2) calc(50px/2) calc(50px/2) calc(50px/2);
+  width: 50px;
+  height:50px;
+  }
+.top-right{
+  left: calc( 50% );
+  top: calc( 50% - 102px );
+  -webkit-transform:rotate(-90deg); /* Safari and Chrome */
+}
+.top-left{
+  left: calc( 50% - 102px );
+  top: calc( 50% - 102px );
+  -webkit-transform:rotate(180deg); /* Safari and Chrome */
+}
+.bottom-right{
+  left: calc( 50% );
+  top: calc( 50%);
+}
+.bottom-left{
+  left: calc( 50% - 102px );
+  top: calc( 50% );
+  -webkit-transform:rotate(90deg); /* Safari and Chrome */
+}
+body{
+  width:100%;
+  height:100%;
+  background:#668D3C;
+  animation:grow 7.5s;
+  -webkit-animation:grow 7.5s; /* Safari and Chrome */
+}
+@-webkit-keyframes drop{
+  0%   {background-color:none; left:calc( 50% - 100px ); top:0px;}
+  100% {background-color: #79dbfc; left:calc( 50% - 100px ); top:calc( 50% - 100px );}
+}
+@-webkit-keyframes grow{
+  0%   {background:#E1A95F;}
+  33%  {background:#E1A95F;}
+  66%  {background:#493829;}
+  100% {background: #668D3C;}
+}
+@-webkit-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0;}
+}
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1;}
+}
