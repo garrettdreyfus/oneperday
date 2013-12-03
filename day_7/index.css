@@ -1,0 +1,10 @@
+html{
+  background-color:#1F1F1F;
+  background: -webkit-radial-gradient(circle, #fff , #1F1F1F 050%);
+}
+#a{
+  text-align:center;
+  font-size:500px;
+  padding-top:60px;
+  font-family:Helvetica;
+}
