@@ -1,0 +1,14 @@
+body{
+  padding:0px;
+  margin:0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  background-image: -webkit-linear-gradient(180deg, rgb(0,0,0) 25%, rgba(0,0,0,0) 25%), -webkit-linear-gradient(90deg, rgb(0,0,0) 25%, rgba(0,0,0,0) 25%); /* For Safari */
+  background-size: 10px 10px;
+}
+#gradients{
+  text-align:center;
+  font-size:72px;
+}
+
